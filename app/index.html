@@ -29,11 +29,11 @@
 
     <nav onmouseover="">
       <a href="">Menu</a>
-      <a href="#/"><div class="branco">Home</div></a>
-      <a ng-href="#/about"><div class="branco">Sobre</div></a>
-      <a ng-href="#/team"><div class="branco">Equipe</div></a>
-      <a ng-href="#/portifolio"><div class="branco">Portifolio</div></a>
-      <a ng-href="#/contact"><div class="branco">Contato</div></a>
+      <a href="#/" data-toggle="tooltip" title="Home"><div class="branco">Home</div></a>
+      <a ng-href="#/about" data-toggle="tooltip" title="Sobre"><div class="branco">Sobre</div></a>
+      <a ng-href="#/team" data-toggle="tooltip" title="Equipe"><div class="branco">Equipe</div></a>
+      <a ng-href="#/portifolio" data-toggle="tooltip" title="Portifolio"><div class="branco">Portifolio</div></a>
+      <a ng-href="#/contact" data-toggle="tooltip" title="Contato"><div class="branco">Contato</div></a>
     </nav>
 
     <div class="">
@@ -51,26 +51,13 @@
        ga('send', 'pageview');
     </script>
 
-    <!-- Menu Dropdown -->
-    <script type="text/javascript">
-          /* iOS re-orientation fix */
-      if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-      var viewportmeta = document.querySelectorAll('meta[name="viewport"]')[0];
-      if (viewportmeta) {
-        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+    <script src="scripts/scripts.js" charset="utf-8"></script>
 
-        document.body.addEventListener('gesturestart', function() {
-          viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
-        }, false);
-      }
-
-      /* iOS hides Safari address bar */
-      window.addEventListener("load",function() {
-        setTimeout(function() {
-          window.scrollTo(0, 1);
-        }, 300);
+    <!-- tooltip -->
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
       });
-      }
     </script>
 
     <!-- build:js(.) scripts/vendor.js -->

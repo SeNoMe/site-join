@@ -105,7 +105,7 @@ nav:hover>a:first-child:after {
 
 	nav a:hover:after {
 		color: #fff;
-		background: #262626;
+		background: rgba(0, 0, 0, 0.5);
 		text-align: center;
 		margin-left: -70px;
 	}
@@ -132,7 +132,7 @@ nav:hover>a:first-child:after {
 	nav a:first-child:after {
 		left: 0;
 		content: "";
-		background: #656d7e;
+		background: rgb(0, 0, 0);
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
