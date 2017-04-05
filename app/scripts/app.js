@@ -31,17 +31,14 @@ angular
       })
       .when('/team', {
         templateUrl: 'views/team.html',
-        controller: 'EquipeCtrl',
         controllerAs: 'equipe'
       })
       .when('/portifolio', {
         templateUrl: 'views/portifolio.html',
-        controller: 'PortifolioCtrl',
         controllerAs: 'portifolio'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl',
         controllerAs: 'contact'
       })
       .otherwise({

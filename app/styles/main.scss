@@ -186,20 +186,27 @@ nav:hover>a:first-child:after {
 
 .video {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  width: 200px;
+  width: auto;
   height: auto;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.overlay{
-  background: $cinza-escuro;
-  opacity: 0.5;
+  z-index: -1000;
+  background-size: cover;
+  -webkit-transform: translate(20%);
+      -ms-transform: translate(20%);
+          transform: translate(20%);
+  @include breakpoint ($tablet){
+    -webkit-transform: translate(40%);
+        -ms-transform: translate(40%);
+            transform: translate(40%);
+  }
+  @include breakpoint ($celular){
+    -webkit-transform: translate(50%, 20%);
+        -ms-transform: translate(50%, 20%);
+            transform: translate(50%, 20%);
+  }
 }
 
 h1{
@@ -408,4 +415,27 @@ form{
   @include breakpoint ($tablet-min){
     display: none;
   }
+}
+
+/* Animations */
+
+/* The starting CSS styles for the enter animation */
+div.ng-enter {
+  transition:0.5s linear all;
+  transform: translateY(1000px);
+}
+
+/* The finishing CSS styles for the enter animation */
+div.ng-enter.ng-enter-active {
+  transform: translateY(0);
+}
+
+div.ng-leave {
+  transition:0.5s linear all;
+  transition-delay: 0.4s;
+  background-color: $cinza-escuro;
+}
+
+div.ng-leave.ng-leave-active {
+  opacity: 0;
 }
