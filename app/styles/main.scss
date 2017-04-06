@@ -434,12 +434,12 @@ form{
 /* The starting CSS styles for the enter animation */
 div.ng-enter {
   transition:0.5s linear all;
-  transform: translateY(1000px);
+  opacity: 0;
 }
 
 /* The finishing CSS styles for the enter animation */
 div.ng-enter.ng-enter-active {
-  transform: translateY(0);
+  opacity: 1;
 }
 
 div.ng-leave {
