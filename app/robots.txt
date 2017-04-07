@@ -1,4 +1,29 @@
 # robotstxt.org
+User-agent: Googlebot 
+User-agent: Googlebot-Mobile 
+User-agent: Googlebot-Image 
+User-agent: Mediapartners-Google 
+User-agent: Adsbot-Google 
+User-agent: BingBot 
+User-agent: Yahoo! Slurp 
+User-agent: Alexa 
+User-agent: Pagerank 
+User-agent: Ping 
+User-agent: ia_archiver 
 
-User-agent: *
-Disallow:
+User-agent: Googlebot 
+Allow: http://www.joindev.com.br 
+User-agent: Slurp 
+Allow: http://www.joindev.com.br 
+User-agent: MSNBot 
+Allow: http://www.joindev.com.br 
+User-agent: Googlebot-Image 
+Allow: http://www.joindev.com.br 
+User-agent: yahoo-mmcrawler 
+Allow: http://www.joindev.com.br 
+User-agent: psbot 
+Allow: http://www.joindev.com.br  
+User-agent: * 
+Allow: http://www.joindev.com.br 
+Allow: joindev.com.br
+Allow: / 
