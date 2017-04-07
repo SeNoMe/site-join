@@ -433,18 +433,21 @@ form{
 
 /* The starting CSS styles for the enter animation */
 div.ng-enter {
-  transition:0.5s linear all;
+  transition:0.8s linear all;
   transform: translateY(1000px);
 }
 
 /* The finishing CSS styles for the enter animation */
 div.ng-enter.ng-enter-active {
   transform: translateY(0);
+  .logo{
+    display: none;
+  }
 }
 
 div.ng-leave {
   transition:0.5s linear all;
-  transition-delay: 0.4s;
+  transition-delay: 0.7s;
   background-color: $cinza-escuro;
 }
 
